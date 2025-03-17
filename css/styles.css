@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.enlace-blog{
+	text-decoration: none;
+	color: black;
+}
+
+/* Cambiar el color de fondo de la navbar */
+.navbar {
+    background-color: #FFFFFF !important;
+}
+.navbar .nav-link {
+    /*color: #FFFFFF !important;*/
+}
+
+/* Diseño para móviles (pantallas menores a 768px) */
+@media screen and (max-width: 768px) {
+    .container {
+        margin: 0; /* Sin márgenes */
+    }
+}
+
+
