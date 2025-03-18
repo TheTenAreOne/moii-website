@@ -4,74 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moii</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-	<!-- Incluir tu archivo CSS personalizado -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="./css/styles.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-gray-100 text-gray-900">
 
     <!-- Barra de navegación -->
-	<nav class="navbar navbar-expand-lg navbar-light">
-		<div class="container">
-			<a class="navbar-brand" href="index.html">Moii</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-				<ul class="navbar-nav me-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="index.html">Inicio</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="./blog/index.html">Blog</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="index.html">Contacto</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
+    <nav class="bg-white shadow-md py-4">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a class="text-xl font-bold" href="../index.html">Moii</a>
+            <div class="hidden md:flex space-x-6">
+                <a class="hover:underline" href="../index.html">Inicio</a>
+                <a class="hover:underline" href="blog/index.html">Blog</a>
+                <a class="hover:underline" href="#">Contacto</a>
+            </div>
+            <button class="md:hidden shadow-md focus:outline-none" id="menu-btn">
+                ☰
+            </button>
+        </div>
+        <!-- Menú móvil -->
+        <div class="hidden md:hidden flex flex-col items-center space-y-2 mt-4" id="mobile-menu">
+            <a class="hover:underline" href="../index.html">Inicio</a>
+            <a class="hover:underline" href="blog/index.html">Blog</a>
+            <a class="hover:underline" href="#">Contacto</a>
+        </div>
+    </nav>
 
     <!-- Contenido -->
-    <div class="container mt-4">
-		<div class="row mb-4">
-			<div class="col-md-12 mx-auto">
-				<h2>Moii, tu sitio cafetero de confianza</h2>
-				<p>¡Revisa nuestra sección de blogs!</p>
-			</div>
-		</div>
-        <div class="row">
-            <div class="col-md-3">
-				<h3>Blog 1</h3>
-				<p>Contenido del blog 1...</p>
+    <div class="container mx-auto my-8 px-4">
+        <div class="text-center mb-6">
+            <h2 class="text-3xl font-bold">Moii, tu sitio cafetero de confianza</h2>
+            <p class="text-gray-700">¡Revisa nuestra sección de blogs!</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-white p-4 shadow rounded-lg">
+                <h3 class="text-lg font-semibold">Blog 1</h3>
+                <p>Contenido del blog 1...</p>
             </div>
-            <div class="col-md-3">
-                <h3>Blog 2</h3>
+            <div class="bg-white p-4 shadow rounded-lg">
+                <h3 class="text-lg font-semibold">Blog 2</h3>
                 <p>Contenido del blog 2...</p>
             </div>
-			<div class="col-md-3">
-				<h3>Blog 1</h3>
-				<p>Contenido del blog 1...</p>
+            <div class="bg-white p-4 shadow rounded-lg">
+                <h3 class="text-lg font-semibold">Blog 3</h3>
+                <p>Contenido del blog 3...</p>
             </div>
-            <div class="col-md-3">
-                <h3>Blog 2</h3>
-                <p>Contenido del blog 2...</p>
+            <div class="bg-white p-4 shadow rounded-lg">
+                <h3 class="text-lg font-semibold">Blog 4</h3>
+                <p>Contenido del blog 4...</p>
             </div>
         </div>
     </div>
-	<footer class="py-3 my-4">
-		<ul class="nav justify-content-center border-bottom pb-3 mb-3">
-		  <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Inicio</a></li>
-		  <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Blogs</a></li>
-		  <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Contacto</a></li>
-		  <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
-		</ul>
-		<p class="text-center text-body-secondary">© 2025 Moii, Inc</p>
-	  </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <!-- Footer -->
+    <footer class="bg-white py-6 mt-8 shadow-md">
+        <div class="container mx-auto flex flex-col items-center">
+            <ul class="flex space-x-6 mb-4">
+                <li><a href="#" class="text-gray-600 hover:text-gray-900">Inicio</a></li>
+                <li><a href="#" class="text-gray-600 hover:text-gray-900">Blogs</a></li>
+                <li><a href="#" class="text-gray-600 hover:text-gray-900">Contacto</a></li>
+                <li><a href="#" class="text-gray-600 hover:text-gray-900">FAQs</a></li>
+            </ul>
+            <p class="text-gray-600">© 2025 Moii, Inc</p>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle del menú móvil
+        document.getElementById("menu-btn").addEventListener("click", function() {
+            document.getElementById("mobile-menu").classList.toggle("hidden");
+        });
+    </script>
+
 </body>
 </html>
 
